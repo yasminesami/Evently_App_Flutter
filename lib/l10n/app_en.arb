@@ -1,0 +1,13 @@
+{
+  "language": "Language",
+  "english": "English",
+  "arabic": "Arabic",
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "logout": "Logout",
+  "home": "Home",
+  "map": "Map",
+  "love": "Love",
+  "profile": "Profile"
+}
