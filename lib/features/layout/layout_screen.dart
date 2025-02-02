@@ -1,5 +1,6 @@
 import 'package:evently/core/constants/app_colors.dart';
 import 'package:evently/core/constants/assets_manager.dart';
+import 'package:evently/features/events/create_event_screen.dart';
 import 'package:evently/features/home/home_screen.dart';
 import 'package:evently/features/love/love_screen.dart';
 import 'package:evently/features/map/map_screen.dart';
@@ -86,7 +87,9 @@ class _HomeScreenState extends State<LayoutScreen> {
         elevation: 0,
         backgroundColor: AppColors.whiteColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushNamed(CreateEventScreen.routeName);
+        },
         child: Container(
           width: 48,
           height: 48,

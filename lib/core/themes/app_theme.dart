@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static final ThemeData lightTheme = ThemeData(
+    appBarTheme: AppBarTheme(color: AppColors.whiteColor),
+    scaffoldBackgroundColor: AppColors.whiteColor,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       unselectedItemColor: AppColors.whiteColor,
       // لون النص غير النشط
@@ -17,6 +19,7 @@ class AppTheme {
   );
 
   static final ThemeData darkTheme = ThemeData(
+    appBarTheme: AppBarTheme(color: AppColors.primaryDark),
     scaffoldBackgroundColor: AppColors.primaryDark,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       unselectedItemColor: AppColors.whiteColor,

@@ -1,10 +1,10 @@
 import 'package:evently/core/constants/assets_manager.dart';
+import 'package:evently/features/layout/layout_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../providers/app_theme_provider.dart';
-import '../home/home_screen.dart';
 import '../onboarding/onboarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
       await prefs.setBool('first_launch', false);
       navigateToScreen(const OnboardingScreen());
     } else {
-      navigateToScreen(const HomeScreen());
+      navigateToScreen(const LayoutScreen());
     }
   }
 
